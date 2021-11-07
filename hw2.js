@@ -40,7 +40,7 @@ Array.prototype.sum = function () {
     let perfectNumber = 0;
     const perfectNumbers = [];
     for (let i = 2; ; i++) {
-      if (isPrime(2) && isPrime(2 ** i - 1)) {
+      if (isPrime(i) && isPrime(2 ** i - 1)) {
         perfectNumber = 2 ** (i - 1) * (2 ** i - 1);
         if (perfectNumber > upTo) break;
         perfectNumbers.push(perfectNumber);
